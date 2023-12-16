@@ -1,0 +1,320 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: fantasy;
+    transition: 0.5s all ease;
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    color: var(--white);
+    text-decoration: none;
+}
+:root{
+    --green:#00ff00;
+    --black:#000;
+    --white:#fff;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 25px;
+    background: linear-gradient(90deg,var(--green),var(--black));
+}
+nav{
+    display: flex;
+    color: var(--white);
+}
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+.logo1{
+    width: 50px;
+    height: 50px;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.moto{
+    width: 600px;
+    height: 500px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    color: var(--white);
+    background-color: var(--black);
+}
+.ninja{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg,var(--green),var(--black),var(--green),var(--black),var(--green),var(--black),var(--green),var(--black));
+    position: relative;
+    z-index: 4;
+    height: 800px;
+}
+.fondo4{
+    height: 500px;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+    top: 0px;
+}
+h3{
+    font-size: 35px;
+}
+.ninja400, .zx10r, .z1000, .z1000r, .z900, .versys300, .versys1000{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ninja400{
+    position: absolute;
+    left: 0px;
+}
+.ninja400:hover .moto{
+    transform: scale(1.2);
+}
+.zx10r:hover .moto{
+    transform: scale(1.2);
+}
+.z1000:hover .moto{
+    transform: scale(1.2);
+}
+.z1000r:hover .moto{
+    transform: scale(1.2);
+}
+.z900:hover .moto{
+    transform: scale(1.2);
+}
+.versys300:hover .moto{
+    transform: scale(1.2);
+}
+.versys1000:hover .moto{
+    transform: scale(1.2);
+}
+.zx10r{
+    position: absolute;
+    right: 0px;
+}
+.z1000{
+    position: absolute;
+    left: 0px;
+}
+.z900{
+    position: absolute;
+    right: 0px;
+}
+.versys300{
+    position: absolute;
+    left: 0px;
+}
+.versys1000{
+    position: absolute;
+    right: 0px;
+}
+.texto0{
+    display: flex;
+    font-size: 20px;
+}
+.texto, .texto1, .texto2, .texto3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.texto, .texto1, .texto2{
+    border-right: 2px solid  #fff;
+}
+.zs, .versys{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 700px;
+    background-repeat: no-repeat;
+    background: linear-gradient(180deg,var(--green),var(--black),var(--green),var(--black),var(--green),var(--black),var(--green),var(--black));
+    position: relative;
+    z-index: 4;
+    height: 800px;
+}
+.fondo5{
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    top: 0px;
+}
+.fondo6{
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    top: 0px;
+}
+.mediosdepago{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 10px;
+    font-size: 20px;
+}
+.pago{
+    width: 50px;
+    height: 50px;
+}
+@media (max-width:1240px){
+    .texto0{
+        font-size: 15px;
+        padding: 17px;
+    }
+    .moto{
+        width: 350px;
+        height: 300px;
+    }
+    .zs, .ninja, .versys{
+        height: 500px;
+    }
+    .fondo5, .fondo4, .fondo6{
+        height: 300px;
+    }
+    ul{
+        gap: 25px;
+    }
+}
+@media (max-width:1050px){
+    .texto0{
+        font-size: 10px;
+        padding: 15px;
+    }
+    .moto{
+        width: 300px;
+        height: 250px;
+    }
+    .zs, .ninja, .versys{
+        height: 350px;
+    }
+    .fondo5, .fondo4, .fondo6{
+        height: 200px;
+    }
+    .titulo{
+        padding-top: 10px;
+        font-size: 20px;
+    }
+    ul{
+        gap: 20px;
+    }
+}
+@media (max-width:780px){
+    .head{
+        font-size: 20px;
+    }
+    .texto0{
+        font-size: 7px;
+        padding: 13px;
+    }
+    .moto{
+        width: 200px;
+        height: 150px;
+    }
+    .zs, .ninja, .versys{
+        height: 250px;
+    }
+    .fondo5, .fondo4, .fondo6{
+        height: 150px;
+    }
+    .titulo{
+        padding-top: 10px;
+        font-size: 20px;
+    }
+    .mediosdepago{
+        font-size: 10px;
+    }
+    .pago{
+        width: 20px;
+        height: 20px;
+    }
+    ul{
+        gap: 15px;
+    }
+}
+@media (max-width:660px){
+    .head{
+        font-size: 10px;
+    }
+    .logo1{
+        width: 20px;
+        height: 20px;
+    }
+    .texto0{
+        font-size: 10px;
+        padding: 5px;
+    }
+    .moto{
+        width: 200px;
+        height: 150px;
+    }
+    .zs, .ninja, .versys{
+        height: 550px;
+    }
+    .fondo5, .fondo4, .fondo6{
+        height: 350px;
+    }
+    .titulo{
+        padding-top: 10px;
+        font-size: 10px;
+    }
+    .mediosdepago{
+        font-size: 10px;
+    }
+    .pago{
+        width: 20px;
+        height: 20px;
+    }
+    .ninja400{
+        left: auto;
+        top: 40px;
+    }
+    .zx10r{
+        right: auto;
+        bottom: 40px;
+    }
+    .z1000{
+        left: auto;
+        top: 40px;
+    }
+    .z900{
+        right: auto;
+        bottom: 40px;
+    }
+    .versys300{
+        left: auto;
+        top: 40px;
+    }
+    .versys1000{
+        right: auto;
+        bottom: 40px;
+    }
+    .mediosdepago{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    ul{
+        gap: 10px;
+    }
+    .texto, .texto1, .texto2, .texto3{
+        padding: 10px;
+    }
+}
